@@ -1,0 +1,86 @@
+import React from 'react';
+import styled from 'styled-components';
+import { codingProfiles } from '../../data/constants'; // Adjust the path as necessary
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+`;
+
+const Title = styled.h2`
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff; /* White text */
+`;
+
+const ProfileList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+`;
+
+const ProfileItem = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+  border: 1.5px solid #6751b9;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  background-color: linear-radient(180deg,#6751b9 0%,#6751b9 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
+
+const ProfileImage = styled.img`
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+`;
+
+const ProfileName = styled.div`
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff; /* White text */
+  margin-bottom: 10px;
+`;
+
+const ProfileDetails = styled.div`
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  color: #ccc; /* Light grey text for contrast */
+`;
+
+const CodingProfiles = () => {
+  return (
+    <Container>
+      <Title>My Coding Profiles</Title>
+      <ProfileList>
+        {codingProfiles.map((profile) => (
+          <ProfileItem key={profile.name} href={profile.link} target="_blank" rel="noopener noreferrer">
+            <ProfileImage src={profile.image} alt={profile.name} />
+            <ProfileName>{profile.name}</ProfileName>
+            <ProfileDetails>
+              <div>Rating: {profile.rating}</div>
+              <div>Problems Solved: {profile.problemsSolved}</div>
+            </ProfileDetails>
+          </ProfileItem>
+        ))}
+      </ProfileList>
+    </Container>
+  );
+};
+
+export default CodingProfiles;
