@@ -33,7 +33,7 @@
 }
 
 .option-button {
-    padding: 2.5rem;
+    padding: 1.5rem;
     border: 1.5px solid #6751b9;
     border-radius: 0.65rem;
     background-color: rgba(22,17,47,0.398);
@@ -62,7 +62,11 @@
     border: 1.5px solid #6751b9;
     color: antiquewhite;
 }
+
 @media screen and (max-width: 768px) {
+    .about-section {
+        margin: 4rem 2rem; /* Reduce margin on smaller screens */
+    }
     .about-content {
         flex-direction: column; /* Stack buttons and content vertically */
         gap: 2rem;
@@ -70,15 +74,13 @@
 
     .about-options {
         flex: none; /* Allow the buttons to take full width */
-        display: flex;
-        flex-direction: row; /* Align buttons side by side */
-        justify-content: space-between;
+        display: grid; /* Use grid to allow buttons in two columns */
+        grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
         gap: 1rem; /* Adjust space between buttons */
         width: 100%; /* Take full width */
     }
 
     .option-button {
-        flex: 1; /* Make buttons take equal width */
         padding: 1.5rem;
         text-align: center;
     }
@@ -104,4 +106,26 @@
     .about-details {
         padding: 1rem;
     }
+}
+
+.role-of-responsibilities,
+.achievements {
+  padding: 10px;
+}
+
+.role-of-responsibilities h3,
+.achievements h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.role-of-responsibilities ul,
+.achievements ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.option-button.active {
+  background-color: #4CAF50;
+  color: white;
 }

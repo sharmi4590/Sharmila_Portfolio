@@ -388,38 +388,30 @@ Note: Currently, only the frontend has been implemented.`,
   ];
 export const codingProfiles = [
   {
-    name: "LeetCode",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
-    link: "https://leetcode.com/rishavchanda/",
-    rating: "1500",
-    problemsSolved: "250"
-  },
-  {
-    name: "Codeforces",
-    image: "https://sta.codeforces.com/s/102340/images/codeforces-telegram-square.png",
-    link: "https://codeforces.com/profile/rishavchanda",
-    rating: "1800",
-    problemsSolved: "300"
-  },
-  {
     name: "Codechef",
     image: "https://www.codechef.com/sites/all/themes/abessive/logo.svg",
-    link: "https://www.codechef.com/users/rishavchanda",
-    rating: "2000",
-    problemsSolved: "400"
+    link: "https://www.codechef.com/users/sharmila_4590",
+  },
+  {
+    name: "LeetCode",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
+    link: "https://www.leetcode.com/sharmila_4590",
+  },
+  {
+    name: "GeeksforGeeks",
+    image: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png",
+    link: "https://auth.geeksforgeeks.org/user/bheemisettysharmila",
   },
   {
     name: "HackerRank",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
-    link: "https://www.hackerrank.com/rishavchanda",
-    rating: "1200",
-    problemsSolved: "150"
+    link: "https://www.hackerrank.com/bheemisettyshar1",
   },
   {
-    name: "AtCoder",
-    image: "https://pbs.twimg.com/profile_images/1340910705246014464/8zKQ6v9C_400x400.jpg",
-    link: "https://atcoder.jp/users/rishavchanda",
-    rating: "1700",
-    problemsSolved: "200"
-  }
+    name: "HackerEarth",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e8/HackerEarth_logo.png",
+    link: "https://www.hackerearth.com/bheemisettysharmila",
+  },
+  
+  
 ];

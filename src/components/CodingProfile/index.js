@@ -62,6 +62,23 @@ const ProfileDetails = styled.div`
   text-align: center;
   color: #ccc; /* Light grey text for contrast */
 `;
+const ViewProfileButton = styled.button`
+  background-color: #fff; /* White background */
+  color: #6751b9; /* Primary color text */
+  border: 1px solid #6751b9;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #6751b9;
+    color: #fff;
+  }
+`;
 
 const CodingProfiles = () => {
   return (
@@ -72,10 +89,7 @@ const CodingProfiles = () => {
           <ProfileItem key={profile.name} href={profile.link} target="_blank" rel="noopener noreferrer">
             <ProfileImage src={profile.image} alt={profile.name} />
             <ProfileName>{profile.name}</ProfileName>
-            <ProfileDetails>
-              <div>Rating: {profile.rating}</div>
-              <div>Problems Solved: {profile.problemsSolved}</div>
-            </ProfileDetails>
+            <ViewProfileButton>View Profile</ViewProfileButton>
           </ProfileItem>
         ))}
       </ProfileList>
