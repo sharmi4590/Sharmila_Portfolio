@@ -117,7 +117,7 @@ const Projects = () => {
   const visibleProjects = showMore ? projects : projects.slice(0, 3);
 
   return (
-    <Container>
+    <Container id="projects">
         <Title>My Projects</Title>
       {visibleProjects.map((project, index) => (
         <ProjectWrapper key={project.id} reverse={index % 2 !== 0}>

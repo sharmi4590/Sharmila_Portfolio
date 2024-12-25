@@ -10,7 +10,7 @@ const Skills = () => {
     setSelectedSkill(skill);
   }
   return (
-    <section className="skills-container">
+    <section className="skills-container" id="skills">
       <h1>Skills</h1>
       <h5>Here are some of my skills on which I have been working</h5>
       <div className="skills-content">

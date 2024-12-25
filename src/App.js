@@ -34,12 +34,14 @@ function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
         <Navbar />
+       
         <Body>
+       
           <HeroSection />
           <Wrapper>
           <AboutSection />
-            <Skills />
-            <Experience />
+            <Skills/>
+            <Experience/>
           </Wrapper>
           <Wrapper>
             <Projects />
@@ -49,6 +51,7 @@ function App() {
           </Wrapper>
           <Footer />
         </Body>
+        
       </Router>
     </ThemeProvider>
   );

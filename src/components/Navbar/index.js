@@ -126,7 +126,7 @@ const MobileMenu = styled.div`
   justify-content: center;
   gap: 16px;
   position: absolute;
-  top: 80;
+  top: 80px;
   right: 0;
   width: 100%;
   padding: 42px 40px 24px 40px; 
@@ -138,7 +138,7 @@ const MobileMenu = styled.div`
   z-index: ${({ open }) => (open ? 1 : -1)};
 `;
 
-const MobileMenuLink = styled(LinkR)`
+const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -177,11 +177,13 @@ const Navbar = () => {
           <FaBars />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#home">Home</NavLink>
+          <NavLink href='#about'>About</NavLink>
           <NavLink href='#skills'>Skills</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href='#coding-profiles'>CodingProfiles</NavLink>
+          <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <GithubButton href="https://github.com">GitHub Profile</GithubButton>
@@ -192,11 +194,13 @@ const Navbar = () => {
             <CloseButton onClick={() => setOpen(false)}>
               <FaTimes />
             </CloseButton>
+            <MobileMenuLink href="#home" onClick={() => setOpen(false)}>Home</MobileMenuLink>
             <MobileMenuLink href="#about" onClick={() => setOpen(false)}>About</MobileMenuLink>
             <MobileMenuLink href='#skills' onClick={() => setOpen(false)}>Skills</MobileMenuLink>
             <MobileMenuLink href='#experience' onClick={() => setOpen(false)}>Experience</MobileMenuLink>
             <MobileMenuLink href='#projects' onClick={() => setOpen(false)}>Projects</MobileMenuLink>
-            <MobileMenuLink href='#education' onClick={() => setOpen(false)}>Education</MobileMenuLink>
+            <MobileMenuLink href='#coding-profiles' onClick={() => setOpen(false)}>CodingProfiles</MobileMenuLink>
+            <MobileMenuLink href='#contact' onClick={() => setOpen(false)}>Contact</MobileMenuLink>
             <GithubButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href="/" target="_blank">Github Profile</GithubButton>
           </MobileMenu>
         )}

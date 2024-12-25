@@ -65,7 +65,7 @@ const ProfileDetails = styled.div`
 
 const CodingProfiles = () => {
   return (
-    <Container>
+    <Container id="coding-profiles">
       <Title>My Coding Profiles</Title>
       <ProfileList>
         {codingProfiles.map((profile) => (
