@@ -4,6 +4,10 @@ import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
 import HeroImg from '../../images/HeroImage.jpg'
 import HeroBgAnimation from '../HeroBgAnimation';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -126,21 +130,6 @@ const Span = styled.span`
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
 `;
-const SubTitle = styled.div`
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_primary + 95};
-
-  @media (max-width: 960px) {
-    text-align: center;
-  }
-
-  @media (max-width: 640px) {
-    font-size: 16px;
-    line-height: 32px;
-  }
-`;
 const ResumeButton = styled.a`
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -194,6 +183,21 @@ const Image = styled.img`
     max-height: 280px;
   }
 `;
+const SocialMediaIcons = styled.div`
+  display: flex;
+  margin-bottom: 1rem;
+`;
+
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
 const Hero = () => {
   return (
     <div id="home">
@@ -217,7 +221,12 @@ const Hero = () => {
                                 />
   </Span>
 </TextLoop>
-<SubTitle>{Bio.description}</SubTitle>
+<SocialMediaIcons>
+          <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+        </SocialMediaIcons>
 <ResumeButton href={Bio.resume} target="blank">Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>

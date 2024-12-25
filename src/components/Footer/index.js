@@ -90,11 +90,13 @@ function Footer() {
       <FooterWrapper>
         <Logo>Rishav Chanda</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+        <NavLink href="#home">Home</NavLink>
+          <NavLink href='#about'>About</NavLink>
+          <NavLink href='#skills'>Skills</NavLink>
+          <NavLink href='#experience'>Experience</NavLink>
+          <NavLink href='#projects'>Projects</NavLink>
+          <NavLink href='#coding-profiles'>CodingProfiles</NavLink>
+          <NavLink href='#contact'>Contact</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
