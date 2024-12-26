@@ -1,17 +1,28 @@
+// RoleOfResponsibilitiesContent.js
 import React from 'react';
-
+import { roles } from '../../../data/constants'; // Adjust the path if needed
+import styled from 'styled-components';
+const About = styled.div`
+   color: ${({ theme }) => theme.text_primary};
+    background: ${({ theme }) => theme.body};
+    `
 const RoleOfResponsibilitiesContent = () => {
   return (
-    <div className="role-of-responsibilities">
+    <About><div className="role-of-responsibilities">
       <h3>Role of Responsibilities</h3>
-      <ul>
-        <li>Responsible for ensuring site reliability and availability.</li>
-        <li>Implement monitoring and alerting systems.</li>
-        <li>Collaborate with development teams for continuous improvements.</li>
-        <li>Work on incident management and root cause analysis.</li>
-        {/* Add more responsibilities here */}
-      </ul>
-    </div>
+      <div className="role-cards">
+        {roles.map((role, index) => (
+          <div key={index} className="role-card">
+            <h4>{role.title} - <span>{role.organization}</span> ({role.dates})</h4>
+            <ul>
+              {role.responsibilities.map((responsibility, idx) => (
+                <li key={idx}>{responsibility}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div></About>
   );
 };
 

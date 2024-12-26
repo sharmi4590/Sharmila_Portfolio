@@ -7,7 +7,7 @@
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    color: antiquewhite;
+    
 }
 
 .about-section h5 {
@@ -15,7 +15,7 @@
     font-weight: 200;
     margin-bottom: 1rem;
     text-align: center;
-    color: antiquewhite;
+  
 }
 
 .about-content {
@@ -56,7 +56,7 @@
 .about-details {
     flex: 2;
     padding: 2rem;
-    background-color: rgba(22,17,47,0.398);
+    
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1.5px solid #6751b9;
@@ -129,3 +129,56 @@
   background-color: #6751b9;
   color: white;
 }
+  
+  .role-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  .role-card {
+    background-color: rgba(22, 17, 47, 0.398);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid #6751b9;
+    transition: transform 0.3s ease;
+  }
+  
+  .role-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .role-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .role-card ul li {
+    margin-bottom: 0.5rem;
+    
+  }
+
+  .role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .role-card span {
+    font-weight: 400;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .role-cards {
+      grid-template-columns: 1fr 1fr; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .role-cards {
+      grid-template-columns: 1fr; 
+    }
+  }
+  

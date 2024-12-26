@@ -306,8 +306,8 @@ export const Bio = {
       `This e-commerce API, built with Node.js and Express.js, offers a robust backend for online stores. Key Features :
 - User Authentication: Secure login and registration using JWT.
 - Product Management: CRUD operations, categories, and ratings.
-- Cart and Order Management: Manage shopping carts and process orders.
-- Review and Rating System: Users can leave product reviews and ratings.
+- Manage shopping carts & process orders.
+- Review & Rating System: Users can leave product reviews & ratings.
 - Middleware: Custom authentication and other purposes.
 - Database Integration: MongoDB with Mongoose for data modeling.`,
       image: ECommerce,
@@ -319,11 +319,10 @@ export const Bio = {
       id: 2,
       title: "DomainAnalyzer",
       description:
-      `Created a tool for generating PDF reports on domain data, including backlinks, social media presence, domain categories, and website screenshots.
-         Key Features:
+      `Created a tool for generating PDF reports on domain data, including backlinks, social media presence, domain categories, and website screenshots. Key Features:
          - Analyzes backlinks, providing metrics and costs.
          - Extracts social media stats with links and follower counts.
-         - Provides domain categorization, traffic, revenue, and keyword insights.
+         - Provides domain categorization, traffic, revenue, & keyword insights.
          - Integrates Open Graph data for social media enhancement.
          - Captures and includes live website screenshots in reports.`,
       image: DomainAnalyzer,
@@ -345,8 +344,8 @@ export const Bio = {
 - Medicine Information: Detailed information about medicines.
 - Expiry Date Tracking: Automatically track and update expiry dates.
 - Inventory Management: Manage medicine inventory efficiently.
-- Notifications: Receive notifications about upcoming expiry dates.
-- Waste Reduction: Auto-remove expired medicines from the inventory.
+- Receive notifications about upcoming expiry dates.
+- Auto-remove expired medicines from the inventory.
 Note: Currently, only the frontend has been implemented.`,
       image: MediTrack,
       tags: ["React JS", "TailwindCSS", "NodeJS", "Javascript", "Firebase"],
@@ -359,9 +358,9 @@ Note: Currently, only the frontend has been implemented.`,
       description:`Templify revolutionizes creative tasks and professional documentation with seamless, user-friendly technology. It offers:
 - Painting: Advanced digital painting tools for stunning artwork.
 - Photo Editing: Filters, adjustments, and retouching features.
-- Text & Watermarks: Easy options to add text or watermarks to images.
+- Easy options to add text or watermarks to images.
 - Resume Building: Customizable templates for professional resumes.
-- Diverse Templates: A vast library for various creative and business needs.`,
+- Diverse Templates: A vast library for various needs.`,
       image: Templify,
       tags: ["HTML", "CSS", "Bootsrap", "JavaScript", "Flask", "NodeJS"],
       github: "https://github.com/sharmi4590/templify",
@@ -381,7 +380,7 @@ Note: Currently, only the frontend has been implemented.`,
       title: "My Portfolio",
       description:"As part of my portfolio, I developed a comprehensive web application using Styled Components and Tailwind CSS for the design. This portfolio includes detailed sections about my education, skills, experiences, projects, and coding profiles, providing a complete overview of my professional and personal achievements. The site is fully responsive and optimized for various devices.",
       image: Portfolio,
-      tags: ["React Js", "Styled Components", "Tailwind CSS"],
+      tags: ["React Js", "Styled Components", "Tailwind CSS","EmailJS"],
       github: "https://github.com/sharmi4590/Sharmila_Portfolio",
       webapp: "https://github.com/sharmi4590/Sharmila_Portfolio",
     },
@@ -414,4 +413,29 @@ export const codingProfiles = [
   },
   
   
+];
+export const achievements = [
+  "Qualified Gate with a rank of 9831 in Gate 2024.",
+  "Finalist of CISCO Ideathon 2024.",
+  "Secured 2nd place in Codeathon 2024, a coding competition organized by Achiever Overseas, Visakhapatnam .",
+  "Achieved 3rd prize in Vista 2022 Ideathon at VIIT, a National Level Tech Fest, competing against 100 teams.",
+  "Solved 1000+ problems, 3* coder in Codechef with highest rating 1701 and Leetcode with highest rating 1763.",
+];
+export const roles = [
+  {
+    title: "Web Technologies Lead",
+    organization: "ACM Student Chapter",
+    dates: "Aug 2023 - Present",
+    responsibilities: [
+      "Delivered seminars on data structures and coding, and coordinated tech events for the ACM Student Chapter.",
+    ]
+  },
+  {
+    title: "Chair",
+    organization: "Yuva Student Chapter",
+    dates: "Jun 2023 - Jul 2024",
+    responsibilities: [
+      "Organized Hackathons and Innovation Challenges as Yuva Lead, attracting over 600+ participants per event.",
+    ]
+  }
 ];

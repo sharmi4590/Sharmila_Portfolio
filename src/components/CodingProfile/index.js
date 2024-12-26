@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{useTheme} from 'styled-components';
 import { codingProfiles } from '../../data/constants'; // Adjust the path as necessary
 
 const Container = styled.div`
@@ -13,7 +13,7 @@ const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #fff; /* White text */
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 const ProfileList = styled.div`
@@ -52,7 +52,7 @@ const ProfileImage = styled.img`
 const ProfileName = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
-  color: #fff; /* White text */
+  color: ${({ theme }) => theme.text_primary};
   margin-bottom: 10px;
 `;
 
@@ -60,7 +60,7 @@ const ProfileDetails = styled.div`
   font-size: 1rem;
   margin-top: 10px;
   text-align: center;
-  color: #ccc; /* Light grey text for contrast */
+  color: ${({ theme }) => theme.text_primary};
 `;
 const ViewProfileButton = styled.button`
   background-color: #fff; /* White background */

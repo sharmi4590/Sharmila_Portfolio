@@ -4,7 +4,22 @@ import AboutContent from './AboutContent';
 import EducationContent from './EducationContent';
 import RoleOfResponsibilitiesContent from './RoleOfResponsibilities';
 import AchievementsContent from './Achievements';
+import styled from 'styled-components';
+const H1 = styled.h1`
+  color: ${({ theme }) => theme.text_primary};
 
+
+  `
+  const H5 = styled.h5`
+  color: ${({ theme }) => theme.text_secondary};
+
+
+  `
+  const About = styled.div`
+    color: ${({ theme }) => theme.text_primary};
+
+    background: ${({ theme }) => theme.body};
+    `
 const AboutSection = () => {
   const [selectedOption, setSelectedOption] = useState('about');
 
@@ -24,9 +39,9 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="about-section" id="about">
-      <h1>About Me</h1>
-      <h5>Get to know me</h5>
+ <section className="about-section" id="about">
+      <H1><h1>About Me</h1></H1>
+      <H5><h5>Get to know me</h5></H5>
       <div className="about-content">
         <div className="about-options">
           <button
@@ -54,9 +69,9 @@ const AboutSection = () => {
             Achievements
           </button>
         </div>
-        <div className="about-details">
+       <About> <div className="about-details">
           {renderContent()}
-        </div>
+        </div></About>
       </div>
     </section>
   );

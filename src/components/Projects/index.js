@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  color: #fff; /* White text */
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 const ProjectWrapper = styled.div`
@@ -38,12 +38,13 @@ const ProjectImageLink = styled.a`
 const ProjectImage = styled.img`
   width: 100%;
   height: auto;
+  border: 1.8px solid ${({ theme }) => theme.primary};
 `;
 
 const ProjectDescription = styled.div`
   width: 50%;
   padding: 20px;
-
+  
   @media (max-width: 768px) {
     width: 100%;
     padding: 10px;
@@ -108,7 +109,7 @@ const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #fff; /* White text */
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 const Projects = () => {

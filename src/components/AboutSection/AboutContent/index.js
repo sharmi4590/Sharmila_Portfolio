@@ -10,7 +10,7 @@ const Container = styled.div`
 const Title = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 20px;
-
+color: ${({ theme }) => theme.text_primary};
   @media (max-width: 500px) {
     font-size: 1.5rem;
   }
@@ -19,7 +19,7 @@ const Title = styled.h3`
 const Text = styled.p`
   font-size: 1.2rem;
   transition: height 0.3s ease;
-
+color: ${({ theme }) => theme.text_primary};
   @media (max-width: 500px) {
     display: none;
   }
@@ -28,7 +28,7 @@ const Text = styled.p`
 const MobileText = styled.p`
   display: none;
   font-size: 1rem;
-
+color: ${({ theme }) => theme.text_primary};
   @media (max-width: 500px) {
     display: block;
   }

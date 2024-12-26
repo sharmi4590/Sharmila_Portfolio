@@ -88,7 +88,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>Sharmila Bheemisetty</Logo>
         <Nav>
         <NavLink href="#home">Home</NavLink>
           <NavLink href='#about'>About</NavLink>
@@ -105,7 +105,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Rishav Chanda. All rights reserved.
+          &copy; 2024 Sharmila Bheemisetty. All rights reserved.
         </Copyright>
 
       </FooterWrapper>

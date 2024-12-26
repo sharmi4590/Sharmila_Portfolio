@@ -3,6 +3,15 @@ import './Skills.css';
 import { skills } from '../../data/constants';
 import SkillCard from './SkillCard/SkillCard';
 import SkillInfoCard from './SkillInfoCard/SkillInfoCard';
+import styled from 'styled-components';
+const H1 = styled.h1`
+  color: ${({ theme }) => theme.text_primary};
+  
+  `
+  const H5 = styled.h5`
+  color: ${({ theme }) => theme.text_secondary};
+  
+  `
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(skills[0]);
@@ -11,8 +20,8 @@ const Skills = () => {
   }
   return (
     <section className="skills-container" id="skills">
-      <h1>Skills</h1>
-      <h5>Here are some of my skills on which I have been working</h5>
+      <H1><h1>Skills</h1></H1>
+      <H5><h5>Here are some of my skills on which I have been working</h5></H5>
       <div className="skills-content">
         <div className="skills">
           {skills.map((item)=>(

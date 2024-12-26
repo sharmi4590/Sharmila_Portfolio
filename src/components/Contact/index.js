@@ -124,13 +124,12 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
-  //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+    emailjs.sendForm('service_daj9t6s', 'template_1cp60hg', form.current, '-6KBkPhWUIOvrj-VZ')
       .then((result) => {
         setOpen(true);
         form.current.reset();

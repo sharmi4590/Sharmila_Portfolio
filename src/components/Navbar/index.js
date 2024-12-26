@@ -1,9 +1,9 @@
-// components/Navbar/index.js
+
 import React, { useState } from 'react';
 import { Link as LinkR } from 'react-router-dom';
 import styled, { useTheme } from 'styled-components';
 import { DiCssdeck } from 'react-icons/di';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Add FaTimes for close button
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 
 const Nav = styled.nav`
   background-color: ${({ theme }) => theme.card_light};
@@ -38,6 +38,7 @@ const NavLogo = styled(LinkR)`
   cursor: pointer;
   text-decoration: none;
   align-items: center;
+  color: ${({ theme }) => theme.text_primary};
   @media screen and (max-width: 640px) {  
   padding: 0 0px;}
 `;
@@ -45,7 +46,7 @@ const NavLogo = styled(LinkR)`
 const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1050px) {
     display: block;
     position: absolute;
     top: 0;
@@ -64,7 +65,7 @@ const NavItems = styled.ul`
   gap: 32px;
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1050px) {
     display: none;
   }
 `;
@@ -87,7 +88,7 @@ const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   padding: 0 6px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1050px) {
     display: none;
   }
 `;
@@ -107,7 +108,7 @@ const GithubButton = styled.a`
   height: 70%;
   :hover {
     background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.text_primary};
   }
   @media screen and (max-width: 640px) {
     font-size: 0.8rem;
@@ -169,7 +170,7 @@ const Navbar = () => {
     <Nav>
       <NavContainer>
         <NavLogo to='/'>
-          <a style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20', cursor: 'pointer' }}>
+          <a style={{ display: 'flex', alignItems: 'center', marginBottom: '20', cursor: 'pointer' }}>
             <DiCssdeck size='3rem' /> <Span>Portfolio</Span>
           </a>
         </NavLogo>

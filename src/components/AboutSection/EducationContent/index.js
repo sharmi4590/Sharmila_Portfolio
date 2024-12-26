@@ -11,6 +11,7 @@ import EducationCard from './EducationCard';
 
 const Container = styled.div`
     display: flex;
+    background: ${({ theme }) => theme.body};
     flex-direction: column;
     justify-content: center;
     position: relative;

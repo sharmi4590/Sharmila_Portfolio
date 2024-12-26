@@ -1,16 +1,22 @@
+// AchievementsContent.js
 import React from 'react';
+import { achievements } from '../../../data/constants'; // Adjust the path if needed
+import styled from 'styled-components';
+const About = styled.div`
+   color: ${({ theme }) => theme.text_primary};
+    background: ${({ theme }) => theme.body};
+    `
 
 const AchievementsContent = () => {
   return (
-    <div className="achievements">
+    <About><div className="achievements">
       <h3>Achievements</h3>
       <ul>
-        <li>Successfully improved website uptime by 20%.</li>
-        <li>Implemented automation for monitoring tasks, reducing manual effort.</li>
-        <li>Contributed to a project that won the Best Tech Innovation Award.</li>
-        {/* Add more achievements here */}
+        {achievements.map((achievement, index) => (
+          <li key={index}>{achievement}</li>
+        ))}
       </ul>
-    </div>
+    </div></About>
   );
 };
 
