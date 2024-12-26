@@ -382,7 +382,7 @@ Note: Currently, only the frontend has been implemented.`,
       image: Portfolio,
       tags: ["React Js", "Styled Components", "Tailwind CSS","EmailJS"],
       github: "https://github.com/sharmi4590/Sharmila_Portfolio",
-      webapp: "https://github.com/sharmi4590/Sharmila_Portfolio",
+      webapp: "https://sharmila-portfolio.vercel.app/",
     },
   ];
 export const codingProfiles = [
