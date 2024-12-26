@@ -29,7 +29,7 @@ export const Bio = {
       "I am a motivated and versatile individual, always eager to take on new challenges.",
     github: "https://github.com/sharmi4590",
     resume:
-      "https://drive.google.com/file/d/1IXg1wcEqmpdyRH5HqW5pS1O2xa7df59y/view?usp=drivesdk",
+      "https://drive.google.com/file/d/1tDLd6QrwY1oAsa4Frd1u701RAjxGIu0c/view?usp=drivesdk",
     linkedin: "https://linkedin.com/in/bheemisetty-sharmila-aa6459257",
     twitter: "https://twitter.com/sharmi4590",
     insta: "https://instagram.com/sharmi_4590",
